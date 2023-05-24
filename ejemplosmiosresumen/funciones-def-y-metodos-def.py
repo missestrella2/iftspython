@@ -39,10 +39,3 @@ def funcion(a):
 
 bla = funcion(12)  ### aca llamo a la funcion y le paso un valor entre los parentesis
 print(bla)
-
-
-def dividir (dividendo, divisor=2):
-	resultado = dividendo/divisor
-	return resultado
- 
-
