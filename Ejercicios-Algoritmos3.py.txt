@@ -1,0 +1,360 @@
+14) Escriba el algoritmo para determinar la cantidad de minutos (y segundos) de acuerdo a una cantidad de segundo ingresados.
+
+INICIO
+LEER SEGUNDOS
+MINUTOS = SEGUNDOS / 60
+MOSTRAR MINUTOS
+FIN
+
+15) Escriba un algoritmo que pida una distancia en pies y pulgadas y que escriba dicha 
+distancia en centímetros. 
+Se recuerda que 
+1 PIE = 12 pulgadas 
+1 pulgada = 2,54 cm
+
+INICIO
+
+LEER PIES
+LEER PULGADAS
+
+CENTI_PULGADAS = PULGADAS * 2,54
+CENTI_PIES = (PIES * 12) * 2,54
+
+MOSTRAR CENTI_PULGADAS
+MOSTRAR CENTI_PIES
+
+FIN
+
+
+
+16) Escriba un algoritmo que pida una temperatura en grados Celsius y que convierta dicha
+temperatura en grados Fahrenheit. Se recuerda que la relacion entre grados Celsius (C)
+y grados Fahrenheit (F) es la siguiente: F = 1,8 * C + 32.
+
+INICIO
+
+LEER CELSIUS
+FAHR = 1,8 * CELCIUS + 32
+MOSTRAR FAHR
+
+FIN
+
+
+17) Escriba un algoritmo que pregunte al usuario el número de horas trabajadas y el costo
+por hora. Determinar el pago de jornal que le corresponde.
+
+INICIO
+
+JORNAL = 0
+
+INGRESAR HORAS
+INGRESAR COSTO
+JORNAL = HORAS * COSTO
+MOSTRAR "EL PAGO QUE LE CORRESPONDE ES: ", JORNAL
+
+FIN
+
+18) Calcular la distancia recorrida por un auto a velocidad constante y en un tiempo
+determinado. Tener en cuenta la fórmula de Movimiento Rectilineo Uniforme:
+Distancia = Velocidad * Tiempo
+
+INICIO
+
+DISTANCIA = 0
+INGRESAR VELOCIDAD
+INGRESAR TIEMPO
+DISTANCIA = VELOCIDAD * TIEMPO
+MOSTRAR "LA DISTANCIA RECORRIDA ES: ", DISTANCIA
+
+FIN
+
+19) Calcular el promedio de notas obtenidas por un alumno, teniendo 7 notas en el año.
+
+INICIO
+
+PROMEDIO = 0
+TOTAL_NOTAS = 0
+
+PARA INDICE = 1 HASTA 7
+   INGRESAR NOTA
+   TOTAL_NOTA = TOTAL_NOTA + NOTA
+FIN-PARA
+
+PROMEDIO = TOTAL_NOTA / 7
+MOSTRAR "EL PROMEDIO DE NOTAS OBTENIDAS POR EL ALUMNO ES: ", PROMEDIO
+
+FIN
+
+20) Escribir un algoritmo que pregunte al usuario una cantidad a invertir, el interes anual,
+y el numero de años. Mostrar el capital obtenido en la inversión.
+
+INICIO
+
+LEER CANT_INVERSION
+LEER INTERES
+LEER AÑOS
+GANANCIA = (INTERES * CANT_INVERSION / 100) * AÑOS)
+MOSTRAR "EL CAPITAL OBTENIDO ES: ", GANANCIA
+
+FIN
+
+21) Se pide determinar la calificación final de un examen, teniendo un nro de respuestas
+correctas que suman 4 puntos c/u, un nro de respuestas incorrectas que restan 1 punto c/u
+y un nro de respuestas en blanco.
+
+INICIO
+
+LEER RESPUESTAS_CORRECTAS
+LEER RESPUESTAS_INCORRECTAS
+NOTA_FINAL = (RESPUESTAS_CORRECTAS * 4) - RESPUESTAS_INCORRECTAS
+MOSTRAR NOTA_FINAL
+
+FIN
+
+
+22) Dadas 10 notas ingresadas, informar cuántos aprobaron (se aprueba con 4)
+
+
+
+INICIO
+
+APROBADOS = 0
+
+PARA INDICE = 1 HASTA 10
+
+  INGRESAR NOTA
+  
+  SI NOTA >= 4 ENTONCES
+     APROBADOS = APROBADOS + 1
+  FIN-SI
+
+FIN-PARA
+
+INDICE = 1
+MIENTRAS INDICE <= 10
+  INGRESAR NOTA
+
+  SI NOTA >= 4 ENTONCES
+     APROBADOS = APROBADOS + 1
+  FIN-SI
+
+  INDICE = INDICE + 1
+
+FIN-MIENTRAS
+
+
+MOSTRAR APROBADOS
+
+FIN
+
+
+
+
+23) Ingresar un nro y mostrar su tabla de multiplicacion
+
+INICIO
+
+RESULTADO = 0
+	LEER NUMERO
+	SI NUMERO > 0 ENTONCES
+           MOSTRAR "LA TABLA DE ", NUMERO, " ES:"
+  	   PARA INDICE = 0 HASTA 10
+	      RESULTADO = NUMERO * INDICE
+              MOSTRAR NUMERO, "*", INDICE, "=", RESULTADO
+	   FIN PARA
+
+        FIN-SI
+FIN
+
+
+
+
+
+24) Ingresar cantidad de empleados de una empresa. Determinar cuantos ganan mas de 5000, 
+cuantos menos y el costo de la empresa en sueldos.
+
+INICIO 
+
+INGRESAR CANT_EMPLEADOS
+CANTIDAD = 1
+SUELDO_MAYOR = 0
+SUELDO_MENOR = 0
+SUELDO_TOTAL = 0
+
+MIENTRAS CANTIDAD <= CANT_EMPLEADOS
+
+   INGRESAR SUELDO
+   SI SUELDO > 5000 ENTONCES
+      SUELDO_MAYOR = SUELDO_MAYOR + 1
+   SINO
+      SUELDO_MENOR = SUELDO_MENOR + 1
+   FIN-SI
+   SUELDO_TOTAL = SUELDO_TOTAL + SUELDO
+
+   CANTIDAD = CANTIDAD + 1
+
+FIN-MIENTRAS
+
+MOSTRAR "LA CANTIDAD CON SUELDO MAYOR A 5000 ES: ", SUELDO_MAYOR
+MOSTRAR "LA CANTIDAD CON SUELDO MENOR O IGUAL A 5000 ES: ", SUELDO_MENOR
+MOSTRAR "LA EMPRESA PAGA UN TOTAL DE: ", SUELDO_TOTAL
+
+FIN
+
+
+
+
+25) Ingresar una cantidad de personas, por cada una: ingresar la estatura y mostrar el 
+promedio de altura final.
+
+INICIO
+
+Ingresar cant_personas
+Cantidad=1
+Para Cantidad hasta cant_personas 
+    Ingresar  estatura
+Fin-Para
+Promedio: estatura / cant_personas
+Mostrar Promedio
+
+
+FIN
+
+
+
+
+26) Dadas 10 letras ingresadas determinar cuál es vocal y cuál es consonante.
+
+INICIO
+
+PARA INDICE = 1 HASTA 10 HACER
+  INGRESAR LETRA
+
+  SI (LETRA == A) O (LETRA == E) O (LETRA == I) O (LETRA == O) O (LETRA == U) ENTONCES
+     MOSTRAR "LA LETRA INGRESADA ES UNA VOCAL"
+  SINO
+     MOSTRAR "LA LETRA INGRESADA ES UNA CONSONANTE"
+  FIN-SI
+FIN PARA
+
+FIN
+
+
+27) Una juguetería tiene mucho éxito en dos de sus productos: payasos y muñecas. Suele hacer venta por correo y la empresa de logística
+les cbra por peso de cada paquete, asi que deben calcular el peso de los payasos y muñecas que saldrán en cada paquete a demanda. Cada payaso 
+11,5 kg y cada muñeca 7,5 kg. Escribir un programa que lea el numero de payasoss y muñecas vendidos en el último pedido y calcule el peso
+total del paquete que será enviado.
+
+
+INICIO
+
+PESO_TOTAL = 0
+
+INGRESAR CANT_PAYASOS
+INGRESAR CANT_MUÑECAS
+
+PESO_TOTAL = (CANT_PAYASOS * 11.5) + (CANT_MUÑECAS * 7.5)
+
+MOSTRAR "EL PESO TOTAL DEL PAQUETE ES: ", PESO_TOTAL
+
+FIN
+
+
+28) Elabore un algoritmo que solicite la edad de dos hermanos y muestre un mensaje indicando la edad del mayor y cuántos años
+de diferencia tiene con el menor.
+
+INICIO
+
+DIFERENCIA = 0
+
+INGRESAR EDAD_1
+INGRESAR EDAD_2
+
+SI EDAD_1 > EDAD_2 ENTONCES
+   DIFERENCIA = EDAD_1 - EDAD_2
+   MOSTRAR "EL HERMANO 1 ES MAYOR"
+   MOSTRAR "LA DIFERENCIA DE EDAD ES: ", DIFERENCIA
+SINO
+  SI EDAD_1 < EDAD_2 ENTONCES
+     DIFERENCIA = EDAD_2 - EDAD_1
+     MOSTRAR "EL HERMANO 2 ES MAYOR"
+     MOSTRAR "LA DIFERENCIA DE EDAD ES: ", DIFERENCIA
+  SINO
+     MOSTRAR "LOS HERMANOS TIENEN LA MISMA EDAD"
+  FIN-SI
+FIN-SI
+
+
+FIN
+
+
+
+29) Se tiene registrada la producción (en unidades) lograda por un operario a lo largo de la semana (lunes a sabado).
+Elabore un algoritmo que nos diga si el operario recibirá incentivo por productividad, sabiendo que el promedio de producción mínima es de
+100 unidades semanales.
+
+INICIO
+
+TOTAL_SEMANA = 0
+PROMEDIO = 0
+
+PARA INDICE = 1 HASTA 6 HACER
+   INGRESAR PRODUCCION
+   TOTAL_SEMANA = TOTAL_SEMANA + PRODUCCION
+FIN-PARA
+
+PROMEDIO = TOTAL_SEMANA / 6
+SI PROMEDIO >= 100 ENTONCES
+   MOSTRAR "EL OPERARIO RECIBIRÁ INCENTIVO"
+SINO
+   MOSTRAR "EL OPERARIO NO RECIBIRÁ INCENTIVO"
+FIN-SI
+
+FIN
+
+
+30) Elabore un algoritmo para leer 3 numeros enteros diferentes entre sí y determinar el número mayor de los 3.
+
+
+INICIO
+
+LEER NUM_1
+LEER NUM_2
+LEER NUM_3
+SI NUM_1 > NUM_2 y NUM_1 > NUM_3 ENTONCES
+     MOSTRAR “EL NUM_1 ES MAYOR”
+SINO
+    SI NUM_2 > NUM_1,  NUM_3 ENTONCES
+     MOSTRAR “EL NUMERO 2 ES MAYOR”
+SINO
+     SI NUM_3 > NUM_1,  NUM_2 ENTONCES
+       MOSTRAR “EL NUM_3 ES MAYOR”
+   FIN-SI
+FIN-SI
+
+FIN
+
+
+
+31) Elabore un algoritmo que solicite la edad de 200 personas y muestre cuántas son mayores y cuántas menores de edad.
+
+
+INICIO
+
+EDAD = 0
+MAYORES = 0
+MENORES = 0
+
+PARA INDICE = 1 HASTA 200 HACER
+   INGRESAR EDAD
+   SI EDAD >= 18 ENTONCES
+      MAYORES = MAYORES + 1
+   SINO
+      MENORES = MENORES + 1
+   FIN-SI
+FIN-PARA 
+
+MOSTRAR "LOS MAYORES DE EDAD SON: ", MAYORES
+MOSTRAR "LOS MENORES DE EDAD SON: ", MENORES
+
+FIN
