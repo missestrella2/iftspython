@@ -1,4 +1,4 @@
-# diferencia entre METODOS y FUNCIONES
+# FUNCIONES
 # una funcion se la puede llamar directamente
 # puede tener o no parametros
 # se puede poner o no return
@@ -25,17 +25,18 @@ saludo("Timmy")
 #funcion sin parametros
 #con return
 #----------------
-def funcion(a):
-  return a
+def funcion():
+  hola="palabra"
+  return hola
 #----------------
-bla = funcion(12)  ### aca llamo a la funcion y le paso un valor entre los parentesis
-print(bla)
+bla = funcion()  ### aca llamo a la funcion y guardo el resultado en la variable bla
+print(bla)       ### recordar que solo la guarde pero si no pongo print no la imprime 
 
 #funcion con parametros
 #con return
-
 def funcion(a):
   return a
+#----------------
+palabra = funcion("ufa")  ### aca llamo a la funcion, le mando un parametro entre los parentesis y guardo el resultado en la variable palabra
+print(palabra)            ### recordar que solo la guarde pero si no pongo print no la imprime 
 
-bla = funcion(12)  ### aca llamo a la funcion y le paso un valor entre los parentesis
-print(bla)

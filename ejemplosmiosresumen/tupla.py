@@ -1,4 +1,5 @@
 #IMPORTANTE: LAS TUPLAS SON INMUTABLES
+#se definen con parentesis
 
 #Definir tupla
 nuevaTupla = tuple()

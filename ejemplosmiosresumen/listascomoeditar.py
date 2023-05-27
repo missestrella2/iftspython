@@ -37,4 +37,3 @@ print(provinList)
 elimProv = provinList.pop(1)  # elimina el elemento 1 pero antes guarda el elemento borrado en una variable
 print(provinList)
 print(elimProv)
-
