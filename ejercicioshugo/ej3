@@ -14,6 +14,11 @@ listadefibo=[]
 listadefibo.append("hola")
 print(listadefibo)
 """
+""" Asi consulto el elemento de una lista usando el indice
+listaej = [8, 20, 5]
+valor = listaej[1] # recuperamos el valor del elemento con el indice
+print(valor)
+"""
 
 listadefibo=[0,1]
 numerodado = int(input("tirame un numero mayor que 2 : "))
