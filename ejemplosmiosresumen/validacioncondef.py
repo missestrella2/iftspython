@@ -1,6 +1,5 @@
-
-
 numeroingresado=0
+
 #-------------------------------
 def preguntar():
     input_OK = False   
@@ -17,6 +16,7 @@ def preguntar():
                     valido = 1
     return numeroingresado
 #-------------------------------
+
 #variablequeguarda = preguntar()
 #print(variablequeguarda)
 

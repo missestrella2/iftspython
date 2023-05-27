@@ -16,11 +16,14 @@ print(listadefibo)
 """
 
 listadefibo=[0,1]
-acumulador=len(listadefibo)
+numerodado = int(input("tirame un numero mayor que 2 : "))
+elementosqueyatienelalista=len(listadefibo)
+vueltas = numerodado-elementosqueyatienelalista
 
-for elementodelalista in range(10):
-    listadefibo.append(acumulador)
-    print(listadefibo)
-    n1= len(listadefibo)
-    n2= len(listadefibo)-1
-    acumulador=n1+n2
+for elementodelalista in range(vueltas):
+    n1= listadefibo[len(listadefibo)-1]
+    n2= listadefibo[len(listadefibo)-2]
+    sumaultimos2= n1+n2
+    listadefibo.append(sumaultimos2)
+    
+print(listadefibo)
