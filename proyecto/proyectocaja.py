@@ -10,10 +10,6 @@ stock={
             "producto":"tomate por unidad",
             "precio":"32",
             },
-        3:{
-            "producto":"arroz x 500g",
-            "precio":"21",
-           }
         }
 
 acumulador=0
@@ -48,7 +44,7 @@ print("Total: {}".format(acumulador))
 #:^10d   Entero centrado en un campo de 10 caracteres
 #:0.2f   Flotante con dos dígitos de precisión
 
-print("Ejemplo sacado de internet de texto alineado")
+print("Ejemplo sacado de internet de texto alineado, esto tenemos que lograr")
 
 for i in range (6):
     nombre = 'Naranja'
@@ -58,9 +54,20 @@ for i in range (6):
 
 
 ## cosas a revisar y a tener en cuenta,preguntar a la profe
+## y si quiero anular un producto? hay que hacerlo? si hay que hacerlo primero lograr que funcione lo basico y despues incorporar el borrado
 ## hay que dar de alta productos?
 ## hay que poner medios de pago diferentes?
 ## el programa finaliza cuando se termina de facturar o queda listo para poder facturar despues?
 ## tiene que llevar fecha, direccion del negocio, etc? o algun otro dato adicional? 
 ## se puede anular tickets, reimprimirlos, etc?
 ## los tickets tambien hay que ir guardandolos? 
+
+## usaria esta estructura:
+## funcion pedircodigo: ingresar codigo y su validacion
+## funcion pedircantidad: ingresar la cantidad y su validacion
+## funcion subtotallinea: imprime los subtotales del producto
+## funcion guardarlinea: guarda los datos de codigo, nombre producto, cantidad y subtotal en un dicc 
+## funcion facturaproducto: llama a la f pedircodigo,pedircantidad,subtotalinea,guardarlinea y repite (bucle)
+## funcion imprimirticket: llama al dicc que tiene las lineas de ticket y las imprime. tambien suma el total de todo 
+
+##el programa seria llamar a la funcion facturarproducto, luego a la de imprimirticket
