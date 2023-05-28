@@ -71,3 +71,15 @@ for i in range (6):
 ## funcion imprimirticket: llama al dicc que tiene las lineas de ticket y las imprime. tambien suma el total de todo 
 
 ##el programa seria llamar a la funcion facturarproducto, luego a la de imprimirticket
+
+"""
+Pensar Pasos:
+-crea un diccionario. cada elemento del diccionario es un producto. 
+la key es el cod de prod y el value es otro dicc.
+-en el diccionario interior la key puede ser nombre de producto y el value el nombre. otra key puede ser preico y value un numero float
+-pedi que se ingrese el codigo de producto y la cantidad
+-con el codigo de producto obtene el nombre del producto, el precio del producto y multiplica precio por cantidad
+-despues guarda toda esa data en una lista? diccionario? acumulador? para poder imprimirla al final
+-hacer bucle que cuando termine con un producto, empiece de nuevo
+- todo eso dentro de un bucle que cuando termine de ingresar los productos, imprima todo y el total 
+"""
