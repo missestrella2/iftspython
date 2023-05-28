@@ -29,4 +29,3 @@ subtotaldetodo=print("Subtotal de la cuenta: {}".format(acumulador))
 
 #total de la cuenta (iria fuera del bucle de pedir producto por producto)
 print("Total: {}".format(acumulador))
-
