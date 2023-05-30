@@ -9,6 +9,42 @@ for cant in range(1,101):
     print(cant)
 """
 
+# 11) Calcular el promedio de notas obtenidas por un alumno, teniendo 7 notas en el año.
+"""
+vueltas=1
+sumanotas=0
+while vueltas<=7:
+    nota=float(input("ingrese la nota numero {}: ".format(vueltas)))
+    sumanotas=sumanotas+nota
+    promedio=sumanotas/7    
+    vueltas=vueltas+1
+promedio=sumanotas/7
+print(int(promedio))
+"""
+
+#13) Se pide determinar la calificación final de un examen, teniendo un nro de respuestas
+#correctas que suman 4 puntos c/u, un nro de respuestas incorrectas que restan 1 punto c/u
+#y un nro de respuestas en blanco.
+#aclaracion: la calificacion de la rta se ingresa por teclado
+"""
+salida=False
+cantdecorrectas=0
+cantdeincorrectas=0
+
+while salida==False:
+    rta=input("ingresa la letra 'c' si la rta es correcta, 'i' si es incorrecta, 'b' si no respondio, y 's' para salir")
+    if rta=="c":
+        cantdecorrectas=cantdecorrectas+1
+    elif rta=="b":
+        cantdeincorrectas=cantdeincorrectas+1
+    else:
+        if rta=="s":
+            salida=True
+notafinal=(cantdecorrectas*4)+(cantdeincorrectas*(-1))
+print(notafinal)
+
+"""
+
 # 22) Dadas 10 notas ingresadas, informar cuántos aprobaron (se aprueba con 4)
 """
 aprobados=0

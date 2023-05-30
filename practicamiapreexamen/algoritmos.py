@@ -5,8 +5,10 @@ multiplicarlos y mostrar el resultado
 4) Ingresar 4 valores. Sumar los dos primeros, 
 multiplicar los dos ultimos y mostrar los resultados.
 5) Ingresan 4 valores, se pide el promedio y la suma. Mostrar ambos resultados
-6) Escriba el algoritmo para determinar la cantidad de minutos (y segundos) de acuerdo a una cantidad de segundo ingresados.
-7) Escriba un algoritmo que pida una distancia en pies y pulgadas y que escriba dicha distancia en centímetros. 
+6) Escriba el algoritmo para determinar la cantidad de minutos (y segundos) 
+de acuerdo a una cantidad de segundo ingresados.
+7) Escriba un algoritmo que pida una distancia en pies y pulgadas 
+y que escriba dicha distancia en centímetros. 
 Se recuerda que 
 1 PIE = 12 pulgadas 
 1 pulgada = 2,54 cm
@@ -18,6 +20,7 @@ por hora. Determinar el pago de jornal que le corresponde.
 10) Calcular la distancia recorrida por un auto a velocidad constante y en un tiempo
 determinado. Tener en cuenta la fórmula de Movimiento Rectilineo Uniforme:
 Distancia = Velocidad * Tiempo 
+===
 11) Calcular el promedio de notas obtenidas por un alumno, teniendo 7 notas en el año.
 12) Escribir un algoritmo que pregunte al usuario una cantidad a invertir, el interes anual,
 y el numero de años. Mostrar el capital obtenido en la inversión.

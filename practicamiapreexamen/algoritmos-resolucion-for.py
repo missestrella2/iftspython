@@ -9,6 +9,36 @@ for cant in range(1,101):
     print(cant)
 """
 
+# 11) Calcular el promedio de notas obtenidas por un alumno, teniendo 7 notas en el año.
+# aclaracion: ingresando las notas por teclado
+"""
+sumanotas=0
+for notas in range(1,8):
+    nota=float(input("ingrese nota numero {}".format(notas)))
+    sumanotas=sumanotas+nota
+promedio=sumanotas/7
+print("el promedio de las 7 notas es {}".format(round(promedio,2)))
+
+"""
+
+#13) Se pide determinar la calificación final de un examen, teniendo un nro de respuestas
+#correctas que suman 4 puntos c/u, un nro de respuestas incorrectas que restan 1 punto c/u
+#y un nro de respuestas en blanco.
+#aclaracion: son 3 respuestas y se ingresan por teclado
+"""
+suma_resp_cor=0
+suma_resp_inc=0
+
+for respuestas in range(3):
+    rta = float(input("Rta nro {}: ingrese 1 si la rta es correcta, 2 si es incorrecta, 3 si no respondio".format(respuestas+1)))
+    if rta==1:
+        suma_resp_cor=suma_resp_cor+1
+    elif rta==2: 
+        suma_resp_inc=suma_resp_inc+1
+notafinal=(suma_resp_cor*4)+(suma_resp_inc*(-1))
+print(notafinal)
+
+"""
 
 # 25) Ingresar una cantidad de personas, por cada una: ingresar la estatura y mostrar el 
 # promedio de altura final.
@@ -57,9 +87,6 @@ for vuelta in range(10):
         print("consonante")
     vuelta=vuelta+1
 """
-
-
-
 
 # 32) Elaborar un algoritmo para obtener el resultado del escrutinio 
 # en las elecciones del delegado escolar. 
