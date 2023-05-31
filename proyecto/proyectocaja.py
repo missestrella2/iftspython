@@ -1,5 +1,8 @@
 ##PROBADNO COSAS PARA EL FUTURO PROYECTO
 
+#Aca en un diccionario estarian los productos:
+#La KEY seria el codigo de producto y el value seria otro dicc con mas datos
+
 #diccionario de productos
 stock={
         1:{
@@ -12,22 +15,38 @@ stock={
             },
         }
 
+
+#Asi seria cada linea del ticket
+#(FALTA AGREGAR TODAS LAS VALIDACIONES)
+
 acumulador=0
-
-#Ingresar el codigo de un producto y la cantidad y que me diga el subtotal de ese producto
-#RECORDAR AGREGAR EN CADA INPUT LA VALIDACION1!
-
+subtotalproducto=0
+#PRODUCTO 1
 codigo = int(input("Ingrese codigo")) 
 cantidad = int(input("ingrese cantidad"))
 preciounitario = stock[codigo]["precio"] #asi consulto el elemento de un subdiccionario usando las key
 preciosubtotal = float(preciounitario) * float(cantidad)
 subtotalproducto = print("producto: {}, precio: {}, cant: {}, subtotal: {}".format(stock[codigo]["producto"],stock[codigo]["precio"],cantidad,preciosubtotal))
-acumulador = acumulador+preciosubtotal
+acumulador=acumulador+preciosubtotal
+
+#PRODUCTO 2
+codigo = int(input("Ingrese codigo")) 
+cantidad = int(input("ingrese cantidad"))
+preciounitario = stock[codigo]["precio"] #asi consulto el elemento de un subdiccionario usando las key
+preciosubtotal = float(preciounitario) * float(cantidad)
+subtotalproducto = print("producto: {}, precio: {}, cant: {}, subtotal: {}".format(stock[codigo]["producto"],stock[codigo]["precio"],cantidad,preciosubtotal))
+acumulador=acumulador+preciosubtotal
+
+#total de la cuenta ANTES de cortar el ticket. 
+# lo dejamos al final?
+#que se active con una letra?
+#o despues de cada linea para ir viendo el importe?
 subtotaldetodo=print("Subtotal de la cuenta: {}".format(acumulador))
 
-# recordar crear un diccionario que va a ser el ticket
+# crear un diccionario que va a ser el ticket
 # aca hacer que guarde el ultimo producto como un diccionario dentro del diccionario ticket
-# cada elemento del diccionario ticket va a ser una LINEA que contiene precio, cantidad, nombre del prod etc
+# cada elemento del diccionario ticket va a ser una LINEA que contiene 
+# precio, cantidad, nombre del prod etc
 
 #aca habria que decidir la condicion para salir del bucle y totalizar la cuenta
 
@@ -43,7 +62,7 @@ print("Total: {}".format(acumulador))
 #:<10d   Entero alineado a la izquierda en un campo de 10 caracteres
 #:^10d   Entero centrado en un campo de 10 caracteres
 #:0.2f   Flotante con dos dígitos de precisión
-
+"""
 print("Ejemplo sacado de internet de texto alineado, esto tenemos que lograr")
 
 for i in range (6):
@@ -51,7 +70,7 @@ for i in range (6):
     cajones = 100
     precio = 91.1
     print(f'{nombre:>10s} {cajones:>10d} {precio:>10.2f}')
-
+"""
 
 ## cosas a revisar y a tener en cuenta,preguntar a la profe
 ## y si quiero anular un producto? hay que hacerlo? si hay que hacerlo primero lograr que funcione lo basico y despues incorporar el borrado
