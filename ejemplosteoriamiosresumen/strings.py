@@ -45,8 +45,3 @@ for caracteres in range(indiceultimaletra):
     indice=indice+1
 
 """
-
-
-
-
-
